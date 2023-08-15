@@ -8,37 +8,112 @@
     
     <link rel="stylesheet" href="Sass/MainStyle.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Urbanist:wght@400&display=swap" rel="stylesheet">
+
 </head>
 <body>
    
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
     <div class="container">
-        <a href="#" class="navbar-brand"><img src="Img/logo1.jpg" alt="Logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a href="#" class="nav-link active">Главная</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Обо мне</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Услуги</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Контакты</a>
-                </li>
-            </ul>
+    
+            <a href="#" class="navbar-brand"><img src="Img/logo1.jpg" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Обо мне</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Контакты</a>
+                    </li>
+                </ul>
         </div>
+       
+       
     </div>
 </nav>
-    
-<!-- Rest of your content -->
 
-<!-- Link to Bootstrap JS and Popper.js (required for Bootstrap features) -->
+<div class="MainContent">
+    <div class="FirstPage">
+        <div class="Text">
+            <h1>Психотерапия онлайн и офлайн</h1>
+            <h2>Психологическое консультирование по всему миру</h2>
+            <button type="button" class="btn btn-primary btn-lg">Записаться на консультацию</button>
+
+        </div>
+        <div class="Photo">
+            <img src="Img/MainPage/MainPhoto.png" alt="Photo">
+        </div>
+
+    </div>
+   
+<!-- RegistrationForm -->
+<div class="RegistrForm">
+    <h1>Записаться на консультацию</h1>
+    <div сlass="Elm">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">ФИО</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Напишите ФИО">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Задайте свой вопрос</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Напишите свой вопрос"></textarea>
+          </div>
+    </div>
+
+  <button type="button" class="btn btn-primary btn-lg">Записаться на консультацию</button>
+  </div>
+
+
+
+
+
+</div>
+ 
+
+
+
+
+<!-- footer -->
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="#">
+            <img  src="Img/iconsSotial/instagram.png" alt="instagram">
+        </a></li>
+        <li class="ms-3"><a class="text-muted" href="#">
+            <img  src="Img/iconsSotial/telegram.png" alt="telegram">
+        </a></li>
+        <li class="ms-3"><a class="text-muted" href="#">
+            <img  src="Img/iconsSotial/whatsapp.png" alt="whatsapp">
+        </a></li>
+      </ul>
+    </footer>
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -3,9 +3,12 @@ body, html{
     height:100%;
   
 }
+
+
 .navbar-brand{
     img{
         width: 40px;
+        margin-left: 100%;
     }
 }
 
@@ -16,6 +19,177 @@ body, html{
 .nav-link {font-size: 1.1em !important}
 .navbar-collapse{
     display: flex;
-    justify-content: center; /* Выравниваем по горизонтали по центру */
-    align-items: center;
+    justify-content: right; /* Выравниваем по горизонтали по центру */
+    align-items: right;
 }
+
+
+$font-stack:   'Urbanist', sans-serif;
+$PrimColor: #E09132;
+$ElemColor: #424530;
+
+.MainContent{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+   
+    border: 1px  solid black;
+    width: 100%;
+      
+
+     //кнопка 
+ .btn-primary  { 
+    background-color: $ElemColor !important; /* Новый цвет в формате HEX, RGB или название цвета */
+    width: 290px;
+    height: 60px;
+    border-radius: 5px;
+    padding: 0px;
+    font-family: $font-stack;
+    border: 0px;
+}
+
+/* Изменение цвета при наведении на кнопку */
+.btn-primary:hover {
+    background-color: $PrimColor !important; /* Новый цвет при наведении */
+  
+}
+
+    .FirstPage, .RegistrForm{
+        width: 80%;
+    
+        border: 1px  solid black;
+        display: flex;
+    }
+   
+
+
+      
+    .FirstPage{
+       
+        flex-wrap:wrap;
+        .Text, .Photo{
+        
+        border: 1px  solid black;
+        }
+        .Text{
+            width: 60%;
+            h1{
+            font-family: $font-stack;
+            display: inline-block;
+            font-size: 80px;
+            line-height: 74px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            margin-top: 100px;
+           
+            }
+            h2{
+                font-family: $font-stack;
+                font-weight: 400;
+    font-size: 18px;
+    max-width: 480px;
+    line-height: 26px;
+    margin-bottom: 20px;
+                }
+            @media screen and (max-width: 992px) {
+                h1 {
+                    font-size: 28px;
+                    margin-bottom: 4px;
+                    line-height: 32px;
+               }
+               h2{
+                font-size: 15px;
+                line-height: 21px;
+                max-width: 480px;
+                margin-bottom: 16px;
+               }
+
+           }
+            
+         
+
+               
+        }
+        .Photo{
+            img{
+                margin-top: 100px;
+            }
+            // @media screen and (max-width: 992px) {
+            //     img {
+            //         width: 685px;
+            //         height: 463px;
+            //    }
+            //}
+            
+
+          
+
+        }
+
+
+
+    }
+  
+.RegistrForm{
+    background-color: $PrimColor;
+    border-radius: 5px;
+    align-items:center;
+    flex-direction:column;
+    h1{
+        font-family: $font-stack;
+            display: inline-block;
+            font-size: 40px;
+            line-height: 74px;
+            font-weight: 300;
+            color: white;
+    }
+    .Elm
+{
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+  
+    .mb-3{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+     
+  
+    //   &.full-width
+    //     width: 100%
+  
+    //   label
+    //     font-weight: bold
+  
+    //   input[type="email"], textarea
+    //     padding: 10px
+    //     border: 1px solid #ccc
+    //     border-radius: 5px
+  
+    //   textarea
+    //     resize: vertical
+    //     min-height: 100px
+  
+}
+ 
+    
+    
+
+}
+
+
+
+}
+
+  
+
+// footer
+     .ms-3 {
+         img{
+            width: 30px;
+         }
+    
+     }
+
