@@ -16,7 +16,7 @@ body {
   width: 100%;
   max-width: 460px;
   padding: 60px;
-  background: #E09132;
+  background: #c5a884;
   border-radius: 10px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3); }
   .contact-form__title {
@@ -39,14 +39,14 @@ body {
     margin-bottom: 20px;
     padding: 0 15px 0 59px;
     font: 16px "Roboto", sans-serif;
-    color: #fff;
+    color: black;
     transition: 0.3s; }
     .contact-form__input_name:focus {
       transition: 0.3s;
       border: 1px solid rgba(255, 241, 198, 0.2); }
   .contact-form__input_phone {
     height: 50px;
-    border: 1px solid #e29f5c;
+    border: 2px solid #e29f5c;
     border-radius: 5px;
     width: 100%;
     background: url("/img/tel.svg") center left 15px no-repeat, #FAF0E6;
@@ -54,10 +54,11 @@ body {
     margin-bottom: 20px;
     padding: 0 15px 0 59px;
     font: 16px "Roboto", sans-serif;
-    color: #fff;
+    color: black;
     transition: 0.3s; }
     .contact-form__input_phone:focus {
       transition: 0.3s;
+      color: #1c1e21;
       border: 1px solid rgba(255, 241, 198, 0.2); }
   .contact-form__input_file {
     display: none; }
@@ -89,11 +90,7 @@ body {
     font: 16px "Roboto", sans-serif;
     transition: 0.3s;
     cursor: pointer; }
-    .contact-form__button:hover {
-      transition: 0.3s;
-      background: #7156f3;
-      color: #fff;
-      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3); }
+   
 
 .preloader {
   position: relative;
@@ -129,9 +126,39 @@ body {
     .error_form{
       display: inline-block;
       text-align: center; 
+     
+      font: 16px "Roboto", sans-serif;
+      color:white;
+      display:none;
+    
     }
+.messege{
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 15px 0 59px;
+    font: 16px "Roboto", sans-serif;
+    background: url("/img/user.svg") center left 15px no-repeat, #FAF0E6;
+    background-size: 30px;
+    margin-bottom: 20px;
 
-
+    border: 2px solid #e29f5c;
+    color: #757575;
+    cursor: pointer;
+  }
+  .messege:focus,.messege:after {
+    color: #1c1e21;
+  }
+  .contact-form .btn-primary {
+    width: 100%;
+    
+  }
+ 
+  @media screen and (max-width: 992px){
+    .contact-form {
+      width: 100%;
+     
+    }
+  }
 
 
 

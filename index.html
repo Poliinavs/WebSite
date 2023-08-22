@@ -59,6 +59,36 @@
 
     </div>
 
+    <div class="AboutMe">
+        <img src="Img/MainPage/MainPhoto.png" alt="Photo">
+        <div class="inf">
+            <div class="inf_block">
+                <img src="Img/MainPage/MainPhoto.png" alt="Photo">
+                <div class="Text">
+                    <h1>7 лет практики</h1>
+                    <h2>Личный приём, онлайн-консультации, групповая работа. </h2>
+                </div>
+                
+            </div>
+            <div class="inf_block">
+                <img src="Img/MainPage/MainPhoto.png" alt="Photo">
+                <div class="Text">
+                    <h1>7 лет практики</h1>
+                    <h2>Личный приём, онлайн-консультации, групповая работа. </h2>
+                </div>
+            </div>
+            <div class="inf_block">
+                <img src="Img/MainPage/MainPhoto.png" alt="Photo">
+                <div class="Text">
+                    <h1>7 лет практики</h1>
+                    <h2>Интегрированный подход — применение техник и приёмов из разных направлений психологии для быстрого и качественного результата.</h2>
+                </div>
+            </div>
+           
+
+        </div>
+
+    </div>
 
     
 <!-- Услуги -->
@@ -124,10 +154,11 @@
       <input name="email" type="email" class="contact-form__input contact-form__input_phone"
              placeholder="Введите ваш email">
     </div>
+    <textarea class="messege" id="myTextarea" onclick="clearText()">Ваше сообщение</textarea>
 
-<p class="error_form">Корректно заполните все поля</p>
-
-<div id="success" class="alert alert-success" role="alert" style="display:none;"></div>
+<p id="success" class="error_form"></p>
+<!-- 
+<div id="success" class="alert alert-success" role="alert" style="display:none;"></div> -->
 
     <!--Кнопка отправки формы-->
     <button type="submit" class="btn btn-primary btn-lg">Записаться на консультацию</button>
@@ -200,6 +231,15 @@
   <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 
   <script>
+ function clearText() {
+      var textarea = document.getElementById("myTextarea");
+      if (textarea.value == "Ваше сообщение") {
+        textarea.value = "";
+      }
+    }
+
+
+
       const TOKEN ="6501304855:AAFLxrPl7MWqyyN2c-dsGRpBiNlhGRIqIOw";
       const CHAT_ID="-973776504";
      const URI_API=`https://api.telegram.org/bot${TOKEN}/sendMessage`;

@@ -182,6 +182,9 @@ $ElemColor: #424530;
     border:1px solid black;
     display: flex;
     flex-direction:column;
+     
+  flex-wrap: wrap;
+  justify-content: space-between;
     width: 80%;
     img {
         width: 34px;
@@ -203,9 +206,11 @@ h2{
     display: flex;
     border:1px solid black;
 
+
     .card{
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         border-radius: 10px;
         padding: 20px;
         margin-right: 10px;
@@ -226,6 +231,7 @@ h2{
             margin-bottom: 10px;
         }
     }
+    
 
 }
 
@@ -244,12 +250,125 @@ h2{
         margin-top: 20px;
     }
 }
+.AboutMe{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    width: 80%;
+    img{
+        width: 560px;
+        height: 559px;
+    }
+   .inf{
+    display: flex;
+    flex-direction: column;
+  
+    .inf_block{
+        padding-left: 30px;
+        padding-bottom:30px ;
+        display: flex;
+        flex-direction: row;
+        img{
+            width: 65px;
+            height:65px
+
+        }
+        .Text{
+    padding-left: 30px;
+    h1{
+        font-size: 26px;
+        line-height: 1.17;
+        font-weight: 600;
+        font-family: $font-stack;
+    }
+    h2{
+        font-size: 14px;
+        line-height: 1.55;
+        font-family: $font-stack;
+        font-weight: 300;
+  
+    }
+        }
+
+    }
+
+    }
 
 
 
 }
 
-  
+
+
+}
+
+@media screen and (max-width: 1098px) {
+    .MainContent  .AboutMe{
+    
+        img{
+            width: 460px;
+            height: 459px;
+        }
+      .inf  .inf_block .Text{
+            h1{
+                font-size: 22px;
+            }
+            h2{
+                font-size: 10px;
+            }
+        }
+    }
+
+
+}
+
+
+
+//планшеты
+@media screen and (max-width: 992px) {
+    .services-cards{ //чтобы было по 2 в ряд
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+         .card{
+            width: calc(50% - 10px); /* 50% минус отступы между блоками */
+  margin-bottom: 20px;
+         }
+     }
+    
+ }
+ //телефон
+ @media screen and (max-width: 714px) {
+    .MainContent  .AboutMe,   .MainContent  .FirstPage, .RegistrForm, .MainContent  .services {
+            width: 95%;
+        
+           
+        }
+        .services-cards{ //карточки в колоку
+            flex-direction: column;
+    
+             .card{
+                width:100%; /* 50% минус отступы между блоками */
+      margin-bottom: 20px;
+             }
+         }
+
+         .MainContent  .AboutMe{
+            flex-direction: column;
+            img{
+                width: 100%;
+                height: 100%;
+                margin-bottom: 30px;
+            }
+           
+
+
+         }
+
+
+ }
+
+
 
 // footer
      .ms-3 {
@@ -259,3 +378,10 @@ h2{
     
      }
 
+
+    //  @media screen and (max-width: 1136px){
+    //     .MainContent  .FirstPage, .RegistrForm, .services {
+    //         width: 100%;
+    //         background-color: #424530;
+    //     }
+    //  }
